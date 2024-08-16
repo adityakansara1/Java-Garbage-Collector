@@ -14,8 +14,6 @@ Department of Computer Science and Engineering
 Indian Institute of Technology, Bombay  
 Mumbai 400-076
 
-**Git Repository:** [Link to Repository](#)
-
 ---
 
 ## Overview
