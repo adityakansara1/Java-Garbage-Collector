@@ -1,0 +1,38 @@
+class Bar extends java.lang.Object
+{
+
+    void <init>()
+    {
+        Bar r0;
+
+        r0 := @this: Bar;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public Node bar(Node, Node)
+    {
+        Node $r0, r2, $r3, r5;
+        Bar r4;
+
+        r4 := @this: Bar;
+
+        r2 := @parameter0: Node;
+
+        r5 := @parameter1: Node;
+
+        $r0 = new Node;
+
+        specialinvoke $r0.<Node: void <init>()>();
+
+        r2.<Node: Node f> = $r0;
+
+        $r3 = new Node;
+
+        specialinvoke $r3.<Node: void <init>()>();
+
+        return $r3;
+    }
+}

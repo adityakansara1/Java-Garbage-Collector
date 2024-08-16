@@ -1,0 +1,80 @@
+public class Pqr extends java.lang.Object
+{
+    public static Test2Node global;
+
+    public void <init>()
+    {
+        Pqr r0;
+
+        r0 := @this: Pqr;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r1;
+
+        r1 := @parameter0: java.lang.String[];
+
+        staticinvoke <Pqr: Test2Node foo()>();
+
+        return;
+    }
+
+    public static Test2Node foo()
+    {
+        Test2Node $r0, $r2, $r8;
+        Test1A $r4;
+        Test1B $r6;
+
+        $r0 = new Test2Node;
+
+        specialinvoke $r0.<Test2Node: void <init>()>();
+
+        $r2 = new Test2Node;
+
+        specialinvoke $r2.<Test2Node: void <init>()>();
+
+        $r4 = new Test1A;
+
+        specialinvoke $r4.<Test1A: void <init>()>();
+
+        $r6 = new Test1B;
+
+        specialinvoke $r6.<Test1B: void <init>()>();
+
+        $r8 = new Test2Node;
+
+        specialinvoke $r8.<Test2Node: void <init>()>();
+
+        $r0.<Test2Node: Test2Node f> = $r8;
+
+        staticinvoke <Pqr: void bar(Test2Node,Test2Node)>($r0, $r2);
+
+        virtualinvoke $r4.<Test1A: void baz(Test2Node,Test2Node)>($r0, $r2);
+
+        virtualinvoke $r6.<Test1A: void baz(Test2Node,Test2Node)>($r0, $r2);
+
+        return $r0;
+    }
+
+    public static void bar(Test2Node, Test2Node)
+    {
+        Test2Node $r0, r2, r3;
+
+        r2 := @parameter0: Test2Node;
+
+        r3 := @parameter1: Test2Node;
+
+        $r0 = new Test2Node;
+
+        specialinvoke $r0.<Test2Node: void <init>()>();
+
+        r2.<Test2Node: Test2Node f> = $r0;
+
+        return;
+    }
+}

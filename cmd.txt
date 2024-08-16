@@ -1,0 +1,9 @@
+export CLASSPATH=$CLASSPATH:/home/adityakansara/Documents/cs6004/Assignment2/pa2-starter/sootclasses-trunk-jar-with-dependencies.jar
+
+java soot.Main -cp /home/adityakansara/Documents/cs6004/Assignment2/pa2-starter -pp -w -f J Test
+
+- loop
+- if-else
+- switch
+- try-catch
+- method call
